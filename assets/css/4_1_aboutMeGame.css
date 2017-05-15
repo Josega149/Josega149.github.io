@@ -1,0 +1,87 @@
+.todosBotones{
+
+}
+
+.buttonsN{
+    width: 50px;
+    height: 50px;
+
+    text-align: center;
+    background-color: #D3D3D3;
+
+    visibility: hidden;
+
+    border-style: solid;
+    z-index: 999;
+
+}
+.buttons{
+    width: 50px;
+    height: 50px;
+
+    text-align: center;
+
+    border-style: solid;
+
+
+}
+
+.gameContainer{
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+}
+.toFill{
+  visibility: hidden;
+    width: 50px;
+    height: 50px;
+}
+
+#startButton{
+  background-color: green;
+}
+
+
+#difficult{
+  background-color: yellow;
+}
+
+
+#gamePanel{
+  display: flex;
+  box-sizing: border-box;
+  width: 85%;
+  height:10em;
+}
+#controlPanel{
+  width: 40%;
+  height:20em;
+  box-sizing: border-box;
+}
+
+.col-md-1{
+  margin:0.5em;
+  box-sizing: border-box;
+  width: 3em;
+  padding-left: 0;
+}
+  .hiddens{
+    display: none;
+  }
+    .hiddenm{
+    display: none;
+  }
+@media only screen and (max-device-width: 480px)
+{
+  .hiddens{
+    display: block;
+  }
+
+}
+@media only screen and (max-device-width: 2000px)
+{
+  .hiddenm{
+    display: block;
+  }
+
+}
