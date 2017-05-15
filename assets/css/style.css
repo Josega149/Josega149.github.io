@@ -1,4 +1,9 @@
-
+.tituloProyecto{
+  font-size: 2em;
+}
+.panel-body{
+  text-align: center;
+}
 body {
     font-size: 14px;
     font-weight: 400;
