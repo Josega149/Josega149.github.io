@@ -6,12 +6,12 @@
   text-align: center;
 }
 .in_the_first_part_of_window{
-  height:100vh;
-  display: block;
+  min-height:100vh;
+  width: auto;
 }
 .lilabout{
   text-align: center;
-  height: 20em;
+  height: auto;
   width: 100%;
   margin: 0;
   padding-top: 5em;
@@ -27,10 +27,10 @@
   color: rgb(46, 99, 222);
 }
 .about-me-area{
-  display: block;
+
 }
 section{
-  display: block;
+  height: auto;
 }
 body {
     font-size: 14px;
@@ -819,6 +819,9 @@ ul.graph >  li.SQL{
 
 @media only screen and (max-device-width: 480px)
 {
+  .in_the_first_part_of_window{
+    width: auto;
+  }
 
 }
 

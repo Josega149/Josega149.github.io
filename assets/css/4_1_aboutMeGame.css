@@ -49,12 +49,14 @@
   box-sizing: border-box;
   height:10em;
   margin-bottom: 5em;
+  height: auto;
 }
 #controlPanel{
   display: flex;
   width: 40%;
   box-sizing: border-box;
   z-index: 999;
+  height: auto;
 }
 
 .col-md-1{
