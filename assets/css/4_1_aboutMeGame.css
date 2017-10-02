@@ -1,10 +1,8 @@
-.todosBotones{
 
-}
 
 .buttonsN{
-    width: 50px;
-    height: 50px;
+    width: 5em;
+    height: 5em;
 
     text-align: center;
     background-color: #D3D3D3;
@@ -16,8 +14,8 @@
 
 }
 .buttons{
-    width: 50px;
-    height: 50px;
+  width: 5em;
+  height: 5em;
 
     text-align: center;
 
@@ -34,7 +32,6 @@
 .toFill{
   visibility: hidden;
     width: 50px;
-    height: 50px;
 }
 
 #startButton{
@@ -50,17 +47,18 @@
 #gamePanel{
   display: flex;
   box-sizing: border-box;
-  width: 85%;
   height:10em;
+  margin-bottom: 5em;
 }
 #controlPanel{
+  display: flex;
   width: 40%;
-  height:20em;
   box-sizing: border-box;
+  z-index: 999;
 }
 
 .col-md-1{
-  margin:0.5em;
+  margin:1em;
   box-sizing: border-box;
   width: 3em;
   padding-left: 0;
@@ -71,6 +69,18 @@
     .hiddenm{
     display: none;
   }
+#targetButton{
+  margin: 2em 2em 0em 1em;
+}
+#timeButton{
+  margin: 2em 2em 0em 5em;
+}
+#timeLabel{
+  margin: 1em 2em 0em 5em;
+}
+#startButton{
+  margin: 2em 1em 0em 2em;
+}
 @media only screen and (max-device-width: 480px)
 {
   .hiddens{

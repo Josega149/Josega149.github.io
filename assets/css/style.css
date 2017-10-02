@@ -1,3 +1,4 @@
+
 .tituloProyecto{
   font-size: 2em;
 }
@@ -105,7 +106,10 @@ fieldset {
     color: #333;
     padding-top: 30px;
     margin-bottom: 50px;
-    text-align: center;
+    text-align: left;
+}
+.section-titleContact {
+    text-align: center !important;
 }
 
 .section-title h2 {
@@ -809,38 +813,13 @@ ul.graph >  li.SQL{
     background: #F8F8F8;
 }
 
-.testimonial-list {
-
-    background: #fff;
-}
-
-.single-testimonial {
-    text-align: center;
-    padding: 80px 200px;
-}
-
-.single-testimonial h3 {
-    font-size: 12px;
-    font-style: italic;
-}
-
-.single-testimonial img {
-    border-radius: 50%;
-    width: 80px;
-}
-#contentMobileIdeas{
-	display: none;
+#testimonial{
+  z-index: 100;
 }
 
 @media only screen and (max-device-width: 480px)
 {
-	#contentMobileIdeas
-	{
-		display: block;
-	}
-	#contentPcIdeas{
-		display: none;
-	}
+
 }
 
 

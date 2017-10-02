@@ -108,7 +108,7 @@
           var size = $("#name").css("font-size");
           $(window).scroll(function() {
             var x = $(window).scrollTop();
-            if (x >= 200) {
+            if (x >= 250) {
               $("#name").css("font-size",0)
               $("#nameIsSticky").css("font-size", 30) ;
             } else {
