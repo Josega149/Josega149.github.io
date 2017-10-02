@@ -88,6 +88,9 @@
   .hiddens{
     display: block;
   }
+  #controlPanel{
+    display: block;
+  }
 
 }
 @media only screen and (max-device-width: 2000px)

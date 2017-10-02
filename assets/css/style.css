@@ -27,7 +27,8 @@
   color: rgb(46, 99, 222);
 }
 .about-me-area{
-
+  text-align: justify;
+  border-style: solid;
 }
 section{
   height: auto;
@@ -339,24 +340,23 @@ a:active{
     box-sizing: border-box;
     background-image: url(../images/me1LowR.jpg);
     background-size: cover;
-    width: 25em;
-    height: 38.38em;
+    width: 18em;
+    height: 28.38em;
+    margin-left: -8em;
 }
 
 .about-me-area {
     background: #fff;
 }
 
-.about-me-text p {
-    margin-bottom: 20px;
-    margin-left: 20px;
+.about-me-text {
+    text-align: justify;
+    font-family: 'Merriweather', serif;
+}
+.about-me-text:hover {
+    background-color:rgba(46, 99, 222,0.2);
 }
 
-.about-me-text p {
-    font-size: 14px;
-    margin-top: 10px;
-    text-align: justify;
-}
 
 a.about-button {
     display: inline-block;
@@ -371,6 +371,7 @@ a.about-button {
     margin-bottom: 20px;
     margin-top: 20px;
     margin-right: 20px;
+    margin-left: 1em;
     -webkit-transition: .4s;
     transition: .4s;
     cursor: pointer;
