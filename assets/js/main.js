@@ -7,7 +7,7 @@
 
 
         $(window).load(function () {
-            
+
 
             $('.preloader').fadeOut();
             $('.preloader-area').delay(350).fadeOut('slow');
@@ -83,7 +83,7 @@
         });
 
 
-  
+
 
         $(window).on('scroll', function () {
             if ($(window).scrollTop() > 200) {
@@ -100,6 +100,24 @@
                 scrollTop: $(anchor.attr('href')).offset().top - 0
             }, 1000);
             e.preventDefault();
+        });
+
+
+
+        $(function() {
+          var size = $("#name").css("font-size");
+          $(window).scroll(function() {
+            var x = $(window).scrollTop();
+            if (x >= 200) {
+              $("#name").css("font-size",0)
+              $("#nameIsSticky").css("font-size", 30) ;
+            } else {
+              $("#name").css("font-size",size)
+              $("#nameIsSticky").css("font-size",0) ;
+            }
+
+          });
+
         });
 
 

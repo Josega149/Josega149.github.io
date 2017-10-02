@@ -4,6 +4,33 @@
 .panel-body{
   text-align: center;
 }
+.in_the_first_part_of_window{
+  height:100vh;
+  display: block;
+}
+.lilabout{
+  text-align: center;
+  height: 20em;
+  width: 100%;
+  margin: 0;
+  padding-top: 5em;
+}
+.icon{
+  height: 5em;
+  width: 5em;
+}
+.iconA{
+  color: black;
+}
+.iconA:hover{
+  color: rgb(46, 99, 222);
+}
+.about-me-area{
+  display: block;
+}
+section{
+  display: block;
+}
 body {
     font-size: 14px;
     font-weight: 400;
@@ -19,7 +46,10 @@ html,
 body {
     height: 100%
 }
-
+#name{
+  color:white;
+  font-family: 'Raleway', sans-serif;
+}
 h1{
     font-family: 'Merriweather', serif;
     font-size: 14px;
@@ -70,9 +100,6 @@ fieldset {
     margin: 0 auto;
     padding: 0;
 }
-
-
-
 
 .section-title {
     color: #333;
@@ -145,13 +172,21 @@ fieldset {
     padding: 5px 0px;
     z-index: 999;
 }
-
+#nameIsSticky{
+  font-size: 0;
+  color: white;
+  margin-left: 5em;
+  display: ruby-text;
+}
 .is-sticky {
-    width: 100%;
+    width: 0%;
     z-index: 9999;
     position: absolute;
-}
 
+}
+.navbar-collapse.collapse{
+  margin-top: -5em !important;
+}
 .navbar-nav {
     float: right;
     position: relative;
@@ -178,6 +213,9 @@ fieldset {
 }
 
 .nav>li>a:hover{
+    background-color: gray !important;
+}
+.nav>li>a:focus{
     background-color: gray !important;
 }
 a:active{
