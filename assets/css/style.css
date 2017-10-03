@@ -827,6 +827,10 @@ ul.graph >  li.SQL{
    #imageContainer{
      margin-left: 0;
    }
+
+   *{
+    border-style: solid;
+   }
 }
 
 /*7*/
