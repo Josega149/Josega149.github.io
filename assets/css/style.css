@@ -804,6 +804,13 @@ ul.graph >  li.SQL{
 
 @media only screen and (max-device-width: 480px)
 {
+  .in_the_first_part_of_window{
+    width: auto;
+  }
+  .me-image{
+    height: auto;
+  }
+
   .thumbnail{
     height: 13em;
   }
@@ -812,10 +819,10 @@ ul.graph >  li.SQL{
    }
 
    .aboutMeComments{
-     margin-top: 0;
+     margin-top: 0 !important;
    }
    #teachingAssistant{
-     margin-top: 0;
+     margin-top: 0 !important;
    }
    #imageContainer{
      margin-left: 0;
@@ -832,13 +839,7 @@ ul.graph >  li.SQL{
   z-index: 100;
 }
 
-@media only screen and (max-device-width: 480px)
-{
-  .in_the_first_part_of_window{
-    width: auto;
-  }
 
-}
 
 
 

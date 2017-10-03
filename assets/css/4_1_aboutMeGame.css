@@ -92,17 +92,25 @@
     display: block;
   }
   #timeButton{
-    margin: 2em 2em 0em 0em;
+    text-align: center;
+    margin: auto;
   }
   #timeLabel{
-    margin: 1em 2em 0em 0em;
+    text-align: center;
+    margin: auto;
+  }
+  #targetButton{
+    text-align: center;
+    margin: auto;
   }
 
  #button4{
-   margin-left: 0;
+   text-align: center;
+   margin: auto;
  }
  #button5{
-   margin-left: 0;
+   text-align: center;
+   margin: auto;
  }
 
 }
