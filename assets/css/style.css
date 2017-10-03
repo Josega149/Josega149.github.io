@@ -239,7 +239,7 @@ a:active{
 .header-area-table{
     background-image: url(../images/bitmoji.jpeg) ;
     background-repeat: no-repeat;
-    width: auto;
+    width: 100%;
 }
 
 .header-area {
@@ -296,7 +296,7 @@ a:active{
 
 .header-area-table {
     display: table;
-    width: auto;
+    width: 100%;
     height: 100%;
 }
 #byJoseT{
@@ -824,9 +824,6 @@ ul.graph >  li.SQL{
    }
    #imageContainer{
      margin-left: 0;
-   }
-   *{
-     border-style: solid;
    }
 }
 
