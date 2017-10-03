@@ -8,7 +8,9 @@
 .in_the_first_part_of_window{
   min-height:100vh;
   width: auto;
+  box-sizing: border-box;
 }
+
 .lilabout{
   text-align: center;
   height: auto;
@@ -174,7 +176,7 @@ fieldset {
     background: #333;
     background-color: black ;
     position: relative;
-    padding: 5px 0px;
+    width: 100% !important;
     z-index: 999;
 }
 #nameIsSticky{
@@ -189,7 +191,14 @@ fieldset {
     position: absolute;
 
 }
+.mainmenu{
+  background-color: black;
+  width: 100%
+}
 .navbar-collapse.collapse{
+  margin-top: -5em !important;
+}
+.navbar-nobg.collapse{
   margin-top: -5em !important;
 }
 .navbar-nav {
@@ -404,14 +413,15 @@ a.about-button:hover {
 @media only screen and (max-device-width: 480px)
 {
     #imageContainer{
-    text-align: center;
-    border-style: solid;
-    box-sizing: border-box;
-    background-image: url(../images/me1LowR.jpg);
-    background-size: cover;
-    width: 18em;
-    height: 28.38em;
-}
+        text-align: center !important;
+        border-style: solid;
+        box-sizing: border-box;
+        background-image: url(../images/me1LowR.jpg);
+        background-size: cover;
+        width: 18em;
+        height: 28.38em;
+        margin-left: 2em !important;
+    }
 
 
 }
