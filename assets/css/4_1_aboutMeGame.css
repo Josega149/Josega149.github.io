@@ -91,6 +91,19 @@
   #controlPanel{
     display: block;
   }
+  #timeButton{
+    margin: 2em 2em 0em 0em;
+  }
+  #timeLabel{
+    margin: 1em 2em 0em 0em;
+  }
+
+ #button4{
+   margin-left: 0;
+ }
+ #button5{
+   margin-left: 0;
+ }
 
 }
 @media only screen and (max-device-width: 2000px)
@@ -98,5 +111,6 @@
   .hiddenm{
     display: block;
   }
+
 
 }

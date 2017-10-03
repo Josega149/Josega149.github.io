@@ -69,21 +69,6 @@
 
 
         });
-        $(".testimonial-list").owlCarousel({
-            items: 1,
-            autoPlay: 15000,
-            navigation: false,
-            itemsDesktop: [1199, 1],
-            itemsDesktopSmall: [980, 1],
-            itemsTablet: [768, 1],
-            itemsTabletSmall: false,
-            itemsMobile: [479, 1],
-            pagination: false,
-            autoHeight: true,
-        });
-
-
-
 
         $(window).on('scroll', function () {
             if ($(window).scrollTop() > 200) {
@@ -120,7 +105,10 @@
 
         });
 
+        $(function(){
+          $("#teachingAssistant").css("margin-top", $("#researchAssistant").css("height"));
 
+        });
 
 
         var timerInit = false;

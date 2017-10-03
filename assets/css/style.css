@@ -351,10 +351,15 @@ a:active{
 
 .about-me-text {
     text-align: justify;
-    font-family: 'Merriweather', serif;
+    font-family: 'Monserrat', sans-serif;
 }
-.about-me-text:hover {
-    background-color:rgba(46, 99, 222,0.2);
+
+.titleAboutMe{
+  font-size: 2em;
+}
+
+li{
+  list-style: none;
 }
 
 
@@ -378,7 +383,7 @@ a.about-button {
     text-align: center;
 }
 a.about-button:hover {
-  background: #06D85F;
+  background-color:rgba(46, 99, 222,0.4);
   color:black;
 }
 
@@ -806,6 +811,15 @@ ul.graph >  li.SQL{
     height: 11em;
    }
 
+   .aboutMeComments{
+     margin-top: 0;
+   }
+   #teachingAssistant{
+     margin-top: 0;
+   }
+   #imageContainer{
+     margin-left: 0;
+   }
 }
 
 /*7*/
