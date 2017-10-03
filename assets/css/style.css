@@ -315,28 +315,6 @@ a:active{
     display: none;
 }
 
-@media only screen and (max-device-width: 480px)
-{
-    .header-text > div> h1 {
-        display: none;
-    }
-    .header-text {
-        display: none;
-    }
-
-    #headerH1{
-        display: none;
-    }
-    #hi{
-        display:block;
-        font-size: 3em;
-        padding-left: 1em;
-    }
-    #personalSite{
-        display: none;
-    }
-
-}
 /*4*/
 .imgAndButton{
     text-align: center;
@@ -420,7 +398,7 @@ a.about-button:hover {
         background-size: cover;
         width: 18em;
         height: 28.38em;
-        margin-left: 2em !important;
+        margin-left: 4em !important;
     }
 
 
@@ -814,6 +792,15 @@ ul.graph >  li.SQL{
 
 @media only screen and (max-device-width: 480px)
 {
+  .header-area-tablecell{
+    display: none;
+  }
+  #hi{
+      display:block;
+      font-size: 3em;
+      padding-left: 1em;
+  }
+
   .in_the_first_part_of_window{
     width: auto;
   }
