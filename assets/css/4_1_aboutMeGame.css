@@ -103,14 +103,18 @@
     text-align: center;
     margin: auto;
   }
+  #startButton{
+    text-align: center;
+    margin: auto;
+  }
 
  #button4{
    text-align: center;
-   margin: auto;
+   margin: auto !important;
  }
  #button5{
    text-align: center;
-   margin: auto;
+   margin: auto !important;
  }
 
 }

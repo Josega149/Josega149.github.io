@@ -409,8 +409,8 @@ a.about-button:hover {
     box-sizing: border-box;
     background-image: url(../images/me1LowR.jpg);
     background-size: cover;
-    width: 25em;
-    height: 38.38em;
+    width: auto;
+    height: auto;
 }
 
 
@@ -828,9 +828,7 @@ ul.graph >  li.SQL{
      margin-left: 0;
    }
 
-   *{
-    border-style: solid;
-   }
+   
 }
 
 /*7*/
