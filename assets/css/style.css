@@ -828,7 +828,9 @@ ul.graph >  li.SQL{
      margin-left: 0;
    }
 
-   
+   *{
+    border-style: solid;
+   }
 }
 
 /*7*/
