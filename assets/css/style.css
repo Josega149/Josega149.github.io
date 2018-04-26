@@ -408,89 +408,10 @@ a.about-button:hover {
 
 /*5*/
 
-.skills-area {
-    background: #f8f8f8;
-    padding-top: 60px;
-    padding-bottom: 30px;
+#graph{
+    height:80vh;
 }
 
-ul.graph{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	background-color: #f8f8f8 ;
-	color:black;
-	font-size: 2em;
-
-}
-
-ul.graph >li{
-	margin-bottom: .5em;
-	padding: .2em;
-	background: #600;
-}
-
-ul.graph > li.Java{
-	background-color: indianred;
-	width: 0;/**88%;*/
-}
-
-ul.graph > li.JavaScript{
-	background-color: indianred;
-	width: 0;/**66%;*/
-}
-
-ul.graph > li.Python{
-	background-color: indianred;
-	width: 0;/**40%;*/
-}
-
-ul.graph >  li.HtmlyCss{
-	background-color: indianred;
-	width: 0;/**78%;*/
-}
-ul.graph >  li.SQL{
-	background-color: indianred;
-	width: 0;/**65%;*/
-}
-
-
-/**Labels basic, intermediate, advanced-->*/
-.flexContainer {
-    display: flex;
-    margin:auto;
-    font-size: 1.5em;
-}
-
-.flex-item{
-
-	width: 33.333333333%;
-	text-align: center;
-	box-sizing: border-box;
-	border-right: dotted;
-}
-
-
-#treintaYTresPorciento,
-#sesentaYSietePorcento,
-#cienPorciento{
-		float:right;
-		padding: 0 3px 0 0 ;
-}
-.skillsContent{
-	background-color: #f8f8f8 ;
-}
-#contentMobileSkills{
-	display: none;
-}
-@media only screen and (max-device-width: 480px)
-{
-	#contentMobileSkills
-	{
-		display: block;
-
-	}
-}
 
 /*6*/
 .well{

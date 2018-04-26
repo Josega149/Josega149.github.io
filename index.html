@@ -235,40 +235,13 @@
                 <div class="col-md-4">
                     <div class="section-title">
                         <h2>skills</h2>
-                        <div id="contentMobileSkills">click me!</div>
                     </div>
                 </div>
             </div>
-
-            <div class="skillsContent">
-                <div>
-                    <ul class="graph">
-                        <li class="Java">Java</li>
-                        <li class="JavaScript">JavaScript</li>
-                        <li class="Python">Python</li>
-                        <li class="HtmlyCss">HTML+CSS</li>
-                        <li class="SQL">SQL</li>
-                    </ul>
-                </div>
-                <div class="flexContainer">
-                    <div class="flex-item">Begginer
-                    </div>
-                    <div class="flex-item">Intermediate
-                    </div>
-                    <div class="flex-item">Advanced
-                    </div>
-                </div>
-            </div>
+            <!--Here it goes the graph-->
+            <svg class="col-md-12" id="graph"></svg>
         </div>
     </section>
-
-
-
-
-
-
-
-
 
 
     <!-- PROJECTS -->
@@ -655,7 +628,9 @@
     <!--JQUERY -->
     <script src="assets/js/jquery.min.js"></script>
 
-
+    <!--D3-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="./assets/js/graph.js"></script>
 
     <!-- BOOTSTRAP JS-->
     <script src="assets/js/bootstrap.min.js"></script>
@@ -666,8 +641,6 @@
     <!--Pop up js-->
     <script src="assets/js/6_popUpProjects.js"></script>
 
-    <script src="assets/js/movingBars.js">
-    </script>
     <!-- MAIN JS-->
     <!--Main -->
     <script src="assets/js/main.js"></script>
