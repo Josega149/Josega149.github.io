@@ -402,16 +402,15 @@ a.about-button:hover {
         margin-left: 4em !important;
     }
 
-
+    #graph{
+        height:90vh;
+    }
 }
 
-
 /*5*/
-
 #graph{
     height:80vh;
 }
-
 
 /*6*/
 .well{

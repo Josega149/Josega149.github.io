@@ -135,8 +135,18 @@ const graph = {
   "links": links
 }
 
-const width = (screen.width  / 1.7) ;
-const height = screen.height  * 0.7;
+
+const width = 0;
+const height = 0;
+if(window.matchMedia("screen and (max-width: 480px)").matches){
+    width =  screen.width;
+    height = screen.height*0.9;
+} 
+else{
+    width = (screen.width  / 1.7) ;
+    height = screen.height  * 0.7;
+}
+ 
 const radius = 30;
 
 const svg = d3.select('svg');
