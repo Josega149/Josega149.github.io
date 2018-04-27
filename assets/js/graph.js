@@ -136,18 +136,18 @@ const graph = {
 }
 
 
-const width = 0;
-const height = 0;
+let width = (screen.width  / 1.7) ;
+let height = screen.height  * 0.7;
+let radius = 30;
+let fontSize = 10;
 if(window.matchMedia("screen and (max-width: 480px)").matches){
     width =  screen.width;
     height = screen.height*0.9;
-} 
-else{
-    width = (screen.width  / 1.7) ;
-    height = screen.height  * 0.7;
+    radius = 10;
+    fontSize = 5;
 }
  
-const radius = 30;
+
 
 const svg = d3.select('svg');
 
@@ -231,7 +231,9 @@ const node = g
 
 
 node.append('title')
-    .text(function (d) { return d.name; });
+    .text(function (d) { 
+        return d.name; 
+    });
 
 const text = g
     .attr('class', 'texts')
@@ -244,7 +246,7 @@ const textLabels = text
     .attr('y', function (d) { return (d).ty; })
     .text(function (d) { return d.name; })
     .attr('font-family', 'sans-serif')
-    .attr('font-size', '10px')
+    .attr('font-size', fontSize+'px')
     .attr('fill', 'black');
 
 
@@ -266,7 +268,9 @@ function ticked() {
         .attr('cx', function(d) { return d.x = Math.max(radius * 2, Math.min(width - radius * 2, d.x)); })
         .attr('cy', function(d) { return d.y = Math.max(radius * 2, Math.min(height - radius * 2, d.y)); });
     text
-        .attr('x', function (d) { return (d.x-20); })
+        .attr('x', function (d) { 
+            return (d.x)-(d.name.length*2.8); 
+        })
         .attr('y', function (d) { return (d.y); });
 }
 
