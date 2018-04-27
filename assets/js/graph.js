@@ -2,6 +2,7 @@
 const levelRoot = 0;
 const levelRols1 = 3;
 const levelSkills1 = 10;
+const levelSkills2 = 13;
 
 const roles = [
     {
@@ -42,23 +43,23 @@ const roles = [
 ];
 const frontEnd = [
     { "name": "ReactJS", "type": "skill", "level": levelSkills1, status : "good" },
-    { "name": "D3", "type": "skill" , "level": levelSkills1 , status : "medium" },
+    { "name": "D3", "type": "skill" , "level": levelSkills1 , status : "learning" },
     { "name": "HTML/CSS", "type": "skill" , "level": levelSkills1 , status : "good" },
-    { "name": "Redux", "type": "skill" , "level": levelSkills1 , status : "learning" },
+    { "name": "Redux", "type": "skill" , "level": levelSkills1 , status : "interested" },
 ];
 const backEnd = [
     { "name": "NodeJs", "type": "skill" , "level": levelSkills1 , status : "good" },
     { "name": "Express", "type": "skill", "level": levelSkills1 , status : "good" },
 ];
 const databases = [
-    { "name": "Elastic", "type": "skill" , "level": levelSkills1 , status : "learning" },
+    { "name": "Elastic", "type": "skill" , "level": levelSkills1 , status : "interested" },
     { "name": "Mongo", "type": "skill" , "level": levelSkills1 , status : "good" },
-    { "name": "Oracle", "type": "skill", "level": levelSkills1 , status : "medium" },
+    { "name": "Oracle", "type": "skill", "level": levelSkills1 , status : "learning" },
 ];
 const languages = [
     { "name": "Java", "type": "skill" , "level": levelSkills1 , status : "good" },
     { "name": "Javascript", "type": "skill" , "level": levelSkills1 , status : "good" },
-    { "name": "Python", "type": "skill", "level": levelSkills1 , status : "learning" },
+    { "name": "Python", "type": "skill", "level": levelSkills1 , status : "interested" },
 ];
 const devops = [
     { "name": "Cloud", "type": "role" , "level": levelSkills1 },
@@ -66,8 +67,12 @@ const devops = [
     { "name": "Infrastructure Skull", "type": "role", "level": levelSkills1 },
 ];
 const AI = [
-    { "name": "Machine learning", "type": "skill" , "level": levelSkills1 , status : "learning" },
-    { "name": "Data mining", "type": "skill", "level": levelSkills1 , status : "learning" },
+    { "name": "Machine learning", "type": "skill" , "level": levelSkills1 , status : "interested" },
+    { "name": "Data mining", "type": "skill", "level": levelSkills1 , status : "interested" },
+];
+
+const infrastructureSkull = [
+    { "name": "Terraform", "type": "skill" , "level": levelSkills2 , status : "interested" },
 ];
 const links = [
     //node[0] = Jose T
@@ -106,7 +111,9 @@ const links = [
     //node[6] = AI
     {"source": roles[6], "target": AI[0], "index": 21 },
     {"source": roles[6], "target": AI[1], "index": 22 },
-    {"source": roles[6], "target": AI[2], "index": 23 },
+
+    //Infrastructure Skull
+    {"source": devops[2], "target": infrastructureSkull[0], "index": 23 },
 ];
 let nodes = [];
 for (let index = 0; index < roles.length; index++) {
@@ -130,6 +137,9 @@ for (let index = 0; index < devops.length; index++) {
 for (let index = 0; index < AI.length; index++) {
     nodes.push(AI[index]);
 }
+for (let index = 0; index < infrastructureSkull.length; index++) {
+    nodes.push(infrastructureSkull[index]);
+}
 const graph = {
   "nodes": nodes,
   "links": links
@@ -140,11 +150,13 @@ let width = (screen.width  / 1.7) ;
 let height = screen.height  * 0.7;
 let radius = 30;
 let fontSize = 10;
+let linkDistance = 80;
 if(window.matchMedia("screen and (max-width: 480px)").matches){
     width =  screen.width;
-    height = screen.height*0.5;
-    radius = 10;
-    fontSize = 5;
+    height = screen.height*0.7;
+    radius = 18;
+    fontSize = 8;
+    linkDistance = 40;
 }
  
 
@@ -174,7 +186,7 @@ const collisionForce = d3.forceCollide(12).strength(50).iterations(50);
 */
 
 const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().id(function (d) { return (d).id; }).distance(80).strength(1))
+    .force('link', d3.forceLink().id(function (d) { return (d).id; }).distance(linkDistance).strength(1))
     .force('center', d3.forceCenter(width / 2, height / 2))
     .force('charge', d3.forceManyBody().strength(-420))
     .force('repelForce', repelForce)
@@ -204,11 +216,11 @@ const node = g
             if(d.status === 'good'){
                 return '#b3ffcc';
             }
-            else if(d.status === 'medium'){
+            else if(d.status === 'learning'){
                 return "#ffccb3";
             }
             else {
-                return "#ff8080";
+                return "#faff54";
             }
             
         } else {
