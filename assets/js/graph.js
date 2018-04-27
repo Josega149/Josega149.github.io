@@ -2,7 +2,7 @@
 const levelRoot = 0;
 const levelRols1 = 3;
 const levelSkills1 = 10;
-const levelSkills2 = 13;
+const levelSkills2 = 10;
 
 const roles = [
     {
@@ -74,6 +74,12 @@ const AI = [
 const infrastructureSkull = [
     { "name": "Terraform", "type": "skill" , "level": levelSkills2 , status : "interested" },
 ];
+const cloud = [
+    { "name": "EC2", "type": "skill" , "level": levelSkills2 , status : "good" },
+    { "name": "Autoscaling", "type": "skill" , "level": levelSkills2 , status : "good" },
+    { "name": "Load balancer", "type": "skill" , "level": levelSkills2 , status : "good" },
+    { "name": "SQS", "type": "skill" , "level": levelSkills2 , status : "good" },
+];
 const links = [
     //node[0] = Jose T
     {"source": roles[0], "target": roles[1], "index": 0 },
@@ -114,6 +120,12 @@ const links = [
 
     //Infrastructure Skull
     {"source": devops[2], "target": infrastructureSkull[0], "index": 23 },
+
+    //CLOUD
+    {"source": devops[0], "target": cloud[0], "index": 24 },
+    {"source": devops[0], "target": cloud[1], "index": 25 },
+    {"source": devops[0], "target": cloud[2], "index": 26 },
+    {"source": devops[0], "target": cloud[3], "index": 27 },
 ];
 let nodes = [];
 for (let index = 0; index < roles.length; index++) {
@@ -140,6 +152,9 @@ for (let index = 0; index < AI.length; index++) {
 for (let index = 0; index < infrastructureSkull.length; index++) {
     nodes.push(infrastructureSkull[index]);
 }
+for (let index = 0; index < cloud.length; index++) {
+    nodes.push(cloud[index]);
+}
 const graph = {
   "nodes": nodes,
   "links": links
@@ -150,7 +165,7 @@ let width = (screen.width  / 1.7) ;
 let height = screen.height  * 0.7;
 let radius = 30;
 let fontSize = 10;
-let linkDistance = 80;
+let linkDistance = 50;
 if(window.matchMedia("screen and (max-width: 480px)").matches){
     width =  screen.width;
     height = screen.height*0.7;
