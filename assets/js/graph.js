@@ -142,7 +142,7 @@ let radius = 30;
 let fontSize = 10;
 if(window.matchMedia("screen and (max-width: 480px)").matches){
     width =  screen.width;
-    height = screen.height*0.9;
+    height = screen.height*0.5;
     radius = 10;
     fontSize = 5;
 }
@@ -348,7 +348,7 @@ function connectedNodes(d, self) {
 //________________________________________________________________________
 let toggleC = 0;
 function collapse(d) {
-    if(d.type !== 'role'){
+    if(d.type !== 'role' && d.type !== 'm'){
         return
     }
     if (toggleC === 0) {
