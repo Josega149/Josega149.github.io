@@ -121,11 +121,11 @@ const links = [
     //Infrastructure Skull
     {"source": devops[2], "target": infrastructureSkull[0], "index": 23 },
 
-    //CLOUD
+    /*/CLOUD
     {"source": devops[0], "target": cloud[0], "index": 24 },
     {"source": devops[0], "target": cloud[1], "index": 25 },
     {"source": devops[0], "target": cloud[2], "index": 26 },
-    {"source": devops[0], "target": cloud[3], "index": 27 },
+    {"source": devops[0], "target": cloud[3], "index": 27 },*/
 ];
 let nodes = [];
 for (let index = 0; index < roles.length; index++) {
@@ -153,7 +153,7 @@ for (let index = 0; index < infrastructureSkull.length; index++) {
     nodes.push(infrastructureSkull[index]);
 }
 for (let index = 0; index < cloud.length; index++) {
-    nodes.push(cloud[index]);
+    //nodes.push(cloud[index]);
 }
 const graph = {
   "nodes": nodes,
