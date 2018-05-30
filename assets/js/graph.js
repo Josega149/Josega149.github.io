@@ -37,7 +37,7 @@ const roles = [
     },
     {
         "id": "6", "level": levelRols1,
-        "name": " I.A",
+        "name": " AI",
         "type": "role"
     },
 ];
@@ -64,10 +64,10 @@ const languages = [
 const devops = [
     { "name": "Cloud", "type": "role" , "level": levelSkills1 },
     { "name": "Monitoring", "type": "role" , "level": levelSkills1 },
-    { "name": "Infrastructure Skull", "type": "role", "level": levelSkills1 },
+    { "name": "Docker", "type": "skill", "level": levelSkills1 },//todo
 ];
 const AI = [
-    { "name": "Machine learning", "type": "skill" , "level": levelSkills1 , status : "interested" },
+    { "name": "ML", "type": "skill" , "level": levelSkills1 , status : "interested" },
     { "name": "Data mining", "type": "skill", "level": levelSkills1 , status : "interested" },
 ];
 
@@ -119,10 +119,10 @@ const links = [
     {"source": roles[6], "target": AI[1], "index": 22 },
 
     //Infrastructure Skull
-    {"source": devops[2], "target": infrastructureSkull[0], "index": 23 },
+    /*{"source": devops[2], "target": infrastructureSkull[0], "index": 23 },*/
 
-    /*/CLOUD
-    {"source": devops[0], "target": cloud[0], "index": 24 },
+    //CLOUD
+    /*{"source": devops[0], "target": cloud[0], "index": 24 },
     {"source": devops[0], "target": cloud[1], "index": 25 },
     {"source": devops[0], "target": cloud[2], "index": 26 },
     {"source": devops[0], "target": cloud[3], "index": 27 },*/
@@ -150,7 +150,7 @@ for (let index = 0; index < AI.length; index++) {
     nodes.push(AI[index]);
 }
 for (let index = 0; index < infrastructureSkull.length; index++) {
-    nodes.push(infrastructureSkull[index]);
+    //nodes.push(infrastructureSkull[index]);
 }
 for (let index = 0; index < cloud.length; index++) {
     //nodes.push(cloud[index]);
@@ -170,7 +170,7 @@ if(window.matchMedia("screen and (max-width: 480px)").matches){
     width =  screen.width;
     height = screen.height*0.7;
     radius = 18;
-    fontSize = 8;
+    fontSize = 10;
     linkDistance = 40;
 }
  
